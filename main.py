@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello from render on Windows!'
+    return 'Hello from Google App Engine on Windows!'
 
 if __name__ == '__main__':
     app.run()
