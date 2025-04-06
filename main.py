@@ -2,9 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello():
-    return 'Hello from Google App Engine on Windows!'
+@app.route("/")
+def home():
+    return " Hello from Flask on Google App Engine!"
 
-if __name__ == '__main__':
-    app.run()
+# For local development
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
